@@ -6,6 +6,10 @@
 
 float CalculateFarheit(float f)
 {
+    /*
+      Formula for conversion is : (5/9) * (f -32)
+      Used float for more precise values
+    */
     return (5.0/9.0) * (f - 32.0);
 }
 
