@@ -28,10 +28,8 @@ void ReadInput(void)
     return;
 }
 
-int ConvertHexToInt(char c)
+int ConvertHexAlphaToInt(char c)
 {
-    if(isdigit(c))
-        return c - '0';
     switch (c)
     {
         case 'A':
@@ -54,6 +52,11 @@ int ConvertHexToInt(char c)
             return 15;
     }
     return -1;
+}
+
+int ConvertHexToInt(char c)
+{
+    return isdigit(c) ? c - '0' : ConvertHexAlphaToInt(c);
 }
 
 void htoi(void)
