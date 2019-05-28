@@ -1,24 +1,42 @@
 # the-c-programming-excercises
-Solutions for the problems in K and R textbook chapter wise.
+Summary :
 
-//The left out exercises and solutions can be looked in the below repository.
+*Solutions for the problems in K and R textbook chapter wise.
 
-There are other repositories which have all the K and R execrises well documented and different approaches for each problem.
+*The left out exercises and solutions can be looked in the below repository.
 
-The one that I liked is : https://clc-wiki.net/wiki/K%26R2_solutions
+*Repo : https://clc-wiki.net/wiki/K%26R2_solutions
 
-In each language the foundation of each structure is so important. Like the data types and ranges in C are really very important to understand. 
-Sometimes I guessed we need to even understand how in-built function modules work or handle the input. Say for printf (included in stdio.h). It does take n arguments and different type of formats. Internally it does some type casting which goes uncovered. Which can sometimes lead to unpredictable behaviour. 
+*The above repo has K and R execrises well documented and different approaches for each problem.
 
-Are the two statements different? If so how?
+Notes :
+
+Self :
+
+*Are the two statements different? If so how?
+  
   i) Learning a programming language 
+  
   ii)Learning about that language compiler
 
-Ranges and type casting has so much of importance in C programming which all lies between them. 
+*Hope we get better, learning these things too.
 
-This is one live example : http://www-users.math.umn.edu/~arnold/disasters/ariane.html. 
+*Working on given exercises in the K & R book are really important. They help you to understand better.
 
-Hope we get better, learning these things too.
+Chapter 1:
 
+*In each programming language the baiscs/foundation of each structure/concept is so important. Like the data types and ranges in C are really very important to understand. 
 
-When left or right shift, the MSB bit value is filled in the empty spaces. 
+*Sometimes we need to even understand how in-built function modules work or handle the input. Say for printf (included in stdio.h). It does take n arguments and different type of formats. Internally it does some type casting which goes uncovered. Which can sometimes lead to unpredictable behaviour/results. 
+
+Chapter 2:
+
+*Ranges and type casting has so much of importance in C programming which all lies between them. 
+
+*This is one live example : http://www-users.math.umn.edu/~arnold/disasters/ariane.html. If we do not know what will be the range or values in that variable in languages like C.
+
+*When left shift, the MSB bit value is filled in the empty spaces. (which can be sign magnitude) 
+
+Chapter 3:
+
+*getch() and ungetch() were good written useful functions for programs like reverse polish calculator.
