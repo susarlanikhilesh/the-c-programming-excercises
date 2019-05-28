@@ -33,6 +33,14 @@ void push(double f)
     return;
 }
 
+void StackTrace(void)
+{
+	printf("StackTrace\n");
+	for(int i = 0; i < stackPointer; i++)
+		printf("%lf\n", stack[i]);
+	return;
+}
+
 //Pops out the last inserted element
 double pop(void)
 {
@@ -201,7 +209,7 @@ int main()
 					printf("error: division by zero\n");
 				break;
 			case '\n':
-				printf("\t%.8lf\n", pop());
+				StackTrace();
 				break;
 			default:
 				printf("error: unknown command %s\n", localBuffer);
