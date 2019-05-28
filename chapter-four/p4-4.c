@@ -33,10 +33,11 @@ void push(double f)
     return;
 }
 
+//To print the elements in the stack
 void StackTrace(void)
 {
 	printf("StackTrace\n");
-	for(int i = 0; i < stackPointer; i++)
+	for(int i = stackPointer - 1; i >= 0; i--)
 		printf("%lf\n", stack[i]);
 	return;
 }
