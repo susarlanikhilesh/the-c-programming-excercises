@@ -1,5 +1,8 @@
 /*
-    
+    Finding key words and their count.
+
+    Note:
+    Does not solve the exercise problem.
 */
 #include <stdio.h>
 #include <string.h>
