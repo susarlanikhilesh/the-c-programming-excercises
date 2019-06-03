@@ -43,7 +43,7 @@ void PrintBar(int n)
 {
     for(int i = 0; i < n; i++)
         printf("-");
-    n != 0 ? printf("\n") : printf("");
+    n != 0 ? printf("\n") : printf(" ");
     return;
 }
 
@@ -65,6 +65,32 @@ int GetMaxLenOfWords(int lenOfWords[], int n)
 }
 
 void PrintVerticalBar(int lenOfWords[], int n, int maxLen)
+{
+    //maxLen of the word would have the bar print on the first line
+    while(maxLen)
+    {
+        //traverse the whole array to see if any word has same len
+        for(int j = 0; j < n; j++)
+        {
+            //if match then print
+            if(lenOfWords[j] == maxLen)
+            {
+                printf("|");
+                --lenOfWords[j];
+            }
+            //else print space, might be a smaller bar
+            else
+                printf(" ");
+            printf(" ");
+        }
+        printf("\n");
+        //do until you print every len from max to 0
+        --maxLen;
+    }
+    return;
+}
+
+void PrintVerticalBarNotUsing(int lenOfWords[], int n, int maxLen)
 {
     //create a double dimension matrix
     //number of rows : max longest length of all the words
